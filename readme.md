@@ -120,12 +120,14 @@ Configure:Método put:{{base_url}}/imoveis/update/{id}
     "bairro": "bomba do hemetério",
     "descricao":"rua"
     }
+
 17. ### Delete Imóvel por ID
     Crie uma nova requisição.
     Configure:
     Método: DELETE
     URL: {{base_url}}/imoveis/delete/{id} passando o ID que você deseja deletar.
 Resposta esperada: Status 204 No Content.
+
 18. ### Requisitos Obrigatórios para ter um Anúncio
 Corretor Existente:
 
@@ -151,9 +153,12 @@ Método POST:{{base_url}}/anuncios/create
 "id": 1  
 }
 }
+
 20. ### Como Listar todos os Anúncios
 Método GET:{{base_url}}/anuncios/create
+
 21. ### Como atualizar um Anúncio
 Método PUT:{{base_url}}/anuncios/update/id
+
 22. ### Como Deletar um Anúncio
 Método DELETE:{{base_url}}/anuncios/delete/id
