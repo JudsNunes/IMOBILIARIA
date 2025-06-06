@@ -30,14 +30,14 @@ public class ImovelController {
         return ResponseEntity.status(HttpStatus.CREATED).body(created);
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/update/{id}")
     public ResponseEntity<Imovel> update(
             @PathVariable Long id,
             @Valid @RequestBody Imovel imovel) {
         return ResponseEntity.ok(imovelService.update(imovel));
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id) {
         imovelService.delete(id);
         return ResponseEntity.noContent().build();

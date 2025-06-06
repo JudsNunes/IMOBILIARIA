@@ -40,4 +40,7 @@ public class ImovelService {
                 .orElseThrow(() -> new EntityNotFoundException("Imóvel não encontrado com ID: " + id));
         imovelRepository.delete(imovel);
     }
+    public boolean existsById(Long id) {
+        return imovelRepository.existsById(id);
+    }
 }
